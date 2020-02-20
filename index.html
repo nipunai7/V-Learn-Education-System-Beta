@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>V-Learn</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-shiv-mq-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
+ */
+;window.Modernizr=function(a,b,c){function D(a){j.cssText=a}function E(a,b){return D(n.join(a+";")+(b||""))}function F(a,b){return typeof a===b}function G(a,b){return!!~(""+a).indexOf(b)}function H(a,b){for(var d in a){var e=a[d];if(!G(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function I(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:F(f,"function")?f.bind(d||b):f}return!1}function J(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+p.join(d+" ")+d).split(" ");return F(b,"string")||F(b,"undefined")?H(e,b):(e=(a+" "+q.join(d+" ")+d).split(" "),I(e,b,c))}function K(){e.input=function(c){for(var d=0,e=c.length;d<e;d++)u[c[d]]=c[d]in k;return u.list&&(u.list=!!b.createElement("datalist")&&!!a.HTMLDataListElement),u}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),e.inputtypes=function(a){for(var d=0,e,f,h,i=a.length;d<i;d++)k.setAttribute("type",f=a[d]),e=k.type!=="text",e&&(k.value=l,k.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(f)&&k.style.WebkitAppearance!==c?(g.appendChild(k),h=b.defaultView,e=h.getComputedStyle&&h.getComputedStyle(k,null).WebkitAppearance!=="textfield"&&k.offsetHeight!==0,g.removeChild(k)):/^(search|tel)$/.test(f)||(/^(url|email)$/.test(f)?e=k.checkValidity&&k.checkValidity()===!1:e=k.value!=l)),t[a[d]]=!!e;return t}("search tel url email datetime date month week time datetime-local number range color".split(" "))}var d="2.6.2",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k=b.createElement("input"),l=":)",m={}.toString,n=" -webkit- -moz- -o- -ms- ".split(" "),o="Webkit Moz O ms",p=o.split(" "),q=o.toLowerCase().split(" "),r={svg:"http://www.w3.org/2000/svg"},s={},t={},u={},v=[],w=v.slice,x,y=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},z=function(b){var c=a.matchMedia||a.msMatchMedia;if(c)return c(b).matches;var d;return y("@media "+b+" { #"+h+" { position: absolute; } }",function(b){d=(a.getComputedStyle?getComputedStyle(b,null):b.currentStyle)["position"]=="absolute"}),d},A=function(){function d(d,e){e=e||b.createElement(a[d]||"div"),d="on"+d;var f=d in e;return f||(e.setAttribute||(e=b.createElement("div")),e.setAttribute&&e.removeAttribute&&(e.setAttribute(d,""),f=F(e[d],"function"),F(e[d],"undefined")||(e[d]=c),e.removeAttribute(d))),e=null,f}var a={select:"input",change:"input",submit:"form",reset:"form",error:"img",load:"img",abort:"img"};return d}(),B={}.hasOwnProperty,C;!F(B,"undefined")&&!F(B.call,"undefined")?C=function(a,b){return B.call(a,b)}:C=function(a,b){return b in a&&F(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=w.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(w.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(w.call(arguments)))};return e}),s.flexbox=function(){return J("flexWrap")},s.canvas=function(){var a=b.createElement("canvas");return!!a.getContext&&!!a.getContext("2d")},s.canvastext=function(){return!!e.canvas&&!!F(b.createElement("canvas").getContext("2d").fillText,"function")},s.webgl=function(){return!!a.WebGLRenderingContext},s.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:y(["@media (",n.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c},s.geolocation=function(){return"geolocation"in navigator},s.postmessage=function(){return!!a.postMessage},s.websqldatabase=function(){return!!a.openDatabase},s.indexedDB=function(){return!!J("indexedDB",a)},s.hashchange=function(){return A("hashchange",a)&&(b.documentMode===c||b.documentMode>7)},s.history=function(){return!!a.history&&!!history.pushState},s.draganddrop=function(){var a=b.createElement("div");return"draggable"in a||"ondragstart"in a&&"ondrop"in a},s.websockets=function(){return"WebSocket"in a||"MozWebSocket"in a},s.rgba=function(){return D("background-color:rgba(150,255,150,.5)"),G(j.backgroundColor,"rgba")},s.hsla=function(){return D("background-color:hsla(120,40%,100%,.5)"),G(j.backgroundColor,"rgba")||G(j.backgroundColor,"hsla")},s.multiplebgs=function(){return D("background:url(https://),url(https://),red url(https://)"),/(url\s*\(.*?){3}/.test(j.background)},s.backgroundsize=function(){return J("backgroundSize")},s.borderimage=function(){return J("borderImage")},s.borderradius=function(){return J("borderRadius")},s.boxshadow=function(){return J("boxShadow")},s.textshadow=function(){return b.createElement("div").style.textShadow===""},s.opacity=function(){return E("opacity:.55"),/^0.55$/.test(j.opacity)},s.cssanimations=function(){return J("animationName")},s.csscolumns=function(){return J("columnCount")},s.cssgradients=function(){var a="background-image:",b="gradient(linear,left top,right bottom,from(#9f9),to(white));",c="linear-gradient(left top,#9f9, white);";return D((a+"-webkit- ".split(" ").join(b+a)+n.join(c+a)).slice(0,-a.length)),G(j.backgroundImage,"gradient")},s.cssreflections=function(){return J("boxReflect")},s.csstransforms=function(){return!!J("transform")},s.csstransforms3d=function(){var a=!!J("perspective");return a&&"webkitPerspective"in g.style&&y("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",function(b,c){a=b.offsetLeft===9&&b.offsetHeight===3}),a},s.csstransitions=function(){return J("transition")},s.fontface=function(){var a;return y('@font-face {font-family:"font";src:url("https://")}',function(c,d){var e=b.getElementById("smodernizr"),f=e.sheet||e.styleSheet,g=f?f.cssRules&&f.cssRules[0]?f.cssRules[0].cssText:f.cssText||"":"";a=/src/i.test(g)&&g.indexOf(d.split(" ")[0])===0}),a},s.generatedcontent=function(){var a;return y(["#",h,"{font:0/0 a}#",h,':after{content:"',l,'";visibility:hidden;font:3px/1 a}'].join(""),function(b){a=b.offsetHeight>=3}),a},s.video=function(){var a=b.createElement("video"),c=!1;try{if(c=!!a.canPlayType)c=new Boolean(c),c.ogg=a.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),c.h264=a.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),c.webm=a.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,"")}catch(d){}return c},s.audio=function(){var a=b.createElement("audio"),c=!1;try{if(c=!!a.canPlayType)c=new Boolean(c),c.ogg=a.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/,""),c.mp3=a.canPlayType("audio/mpeg;").replace(/^no$/,""),c.wav=a.canPlayType('audio/wav; codecs="1"').replace(/^no$/,""),c.m4a=(a.canPlayType("audio/x-m4a;")||a.canPlayType("audio/aac;")).replace(/^no$/,"")}catch(d){}return c},s.localstorage=function(){try{return localStorage.setItem(h,h),localStorage.removeItem(h),!0}catch(a){return!1}},s.sessionstorage=function(){try{return sessionStorage.setItem(h,h),sessionStorage.removeItem(h),!0}catch(a){return!1}},s.webworkers=function(){return!!a.Worker},s.applicationcache=function(){return!!a.applicationCache},s.svg=function(){return!!b.createElementNS&&!!b.createElementNS(r.svg,"svg").createSVGRect},s.inlinesvg=function(){var a=b.createElement("div");return a.innerHTML="<svg/>",(a.firstChild&&a.firstChild.namespaceURI)==r.svg},s.smil=function(){return!!b.createElementNS&&/SVGAnimate/.test(m.call(b.createElementNS(r.svg,"animate")))},s.svgclippaths=function(){return!!b.createElementNS&&/SVGClipPath/.test(m.call(b.createElementNS(r.svg,"clipPath")))};for(var L in s)C(s,L)&&(x=L.toLowerCase(),e[x]=s[L](),v.push((e[x]?"":"no-")+x));return e.input||K(),e.addTest=function(a,b){if(typeof a=="object")for(var d in a)C(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},D(""),i=k=null,function(a,b){function k(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function l(){var a=r.elements;return typeof a=="string"?a.split(" "):a}function m(a){var b=i[a[g]];return b||(b={},h++,a[g]=h,i[h]=b),b}function n(a,c,f){c||(c=b);if(j)return c.createElement(a);f||(f=m(c));var g;return f.cache[a]?g=f.cache[a].cloneNode():e.test(a)?g=(f.cache[a]=f.createElem(a)).cloneNode():g=f.createElem(a),g.canHaveChildren&&!d.test(a)?f.frag.appendChild(g):g}function o(a,c){a||(a=b);if(j)return a.createDocumentFragment();c=c||m(a);var d=c.frag.cloneNode(),e=0,f=l(),g=f.length;for(;e<g;e++)d.createElement(f[e]);return d}function p(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return r.shivMethods?n(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+l().join().replace(/\w+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(r,b.frag)}function q(a){a||(a=b);var c=m(a);return r.shivCSS&&!f&&!c.hasCSS&&(c.hasCSS=!!k(a,"article,aside,figcaption,figure,footer,header,hgroup,nav,section{display:block}mark{background:#FF0;color:#000}")),j||p(a,c),a}var c=a.html5||{},d=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,e=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,f,g="_html5shiv",h=0,i={},j;(function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",f="hidden"in a,j=a.childNodes.length==1||function(){b.createElement("a");var a=b.createDocumentFragment();return typeof a.cloneNode=="undefined"||typeof a.createDocumentFragment=="undefined"||typeof a.createElement=="undefined"}()}catch(c){f=!0,j=!0}})();var r={elements:c.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:c.shivCSS!==!1,supportsUnknownElements:j,shivMethods:c.shivMethods!==!1,type:"default",shivDocument:q,createElement:n,createDocumentFragment:o};a.html5=r,q(b)}(this,b),e._version=d,e._prefixes=n,e._domPrefixes=q,e._cssomPrefixes=p,e.mq=z,e.hasEvent=A,e.testProp=function(a){return H([a])},e.testAllProps=J,e.testStyles=y,e.prefixed=function(a,b,c){return b?J(a,b,c):J(a,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+v.join(" "):""),e}(this,this.document),function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))};</script>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cource.html">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="cource.html">Job Vacancies</a>
+                                    </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                    </div>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Getting Started</a>
+                                </li>
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" href="#">Log In/Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>Dreams make your life better,<br>Nothing can stop you.</h5>
+                            <h1>Reach Your Life Goals
+                                </h1>
+                            <p>Dreams never end. Live upto your expectations. Losing one chance will give you thousands of oppurtunities. Not selected for Higher Education does not mean you cannot reach your Goals. V-Learn is just for you. Now you can search eligible couses for you in Vocational Training Institutes all over the country.</p>
+                            <a href="cource.html" class="btn_1">View Courses </a>
+                            <a href="contact.html" class="btn_2">Get Started </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+    <section style="margin-top: 2%;" class="feature_part">
+
+    <div class="colorlib-search" >  
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-12 search-wrap">
+						<div class="search-wrap-2">
+							<form method="post" class="colorlib-form">
+			              	<div class="row">
+			                <div class="col-md-3">
+			                  <div class="form-group">
+			                    <!-- <label for="search">Search Course</label> -->
+			                    <div class="form-field">
+			                      <input type="text" id="search" class="form-control" placeholder="Keyword search">
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="col-md-3">
+			                  <div class="form-group">
+			                    <!-- <label for="course">Category Course</label> -->
+			                    <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+								<div class="form-select" id="default-select"">
+											<select>
+												<option value="0">Job Name</option>
+									<option value="1">Web & Multimedia Developers</option>
+									<option value="2">Hotel Industry</option>
+									<option value="3">Beautician</option>
+									<option value="4">Welders and Flame Cutters</option>
+									</select>
+								</div>
+			                  </div>
+			                </div>
+			                <div class="col-md-3">
+			                  <div class="form-group">
+			                    <!-- <label for="difficulty">Difficulty</label> -->
+			                    <div class="form-field">
+                                        <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                                        <div class="form-select" id="default-select">
+                                                    <select>
+                                                        <option value=" 0">Province</option>
+                                            <option value="1">Western</option>
+                                            <option value="2">Southern</option>
+                                            <option value="3">Central</option>
+                                            <option value="4">Northern</option>
+                                            <option value="5">Eastern</option>
+                                            <option value="6">North-Western</option>
+                                            <option value="7">North-Central</option>
+                                            <option value="8">Uva</option>
+                                            <option value="9">Sabaragamuwa</option>
+                                            </select>
+                                        </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="col-md-3">
+			                  <input type="submit" name="submit" id="submit" value="Search course" class="btn_1">
+			                </div>
+			              </div>
+			            </form>
+		            </div>
+					</div>
+				</div>
+			</div>
+        </div>              
+    </div>
+            
+</section>
+    <!-- feature_part start-->
+    <section class="feature_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-3 align-self-center">
+                    <div class="single_feature_text ">
+                        <h2>Our <br> Vision</h2>
+                        <p>Lift up the life style of the Sri Lankan youth while taking the nation to a whole new level. </p>
+                        <a href="contactus.html" class="btn_1">Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><i class="ti-search"></i></span>
+                            <h4>Find Ways</h4>
+                            <p>Finding who are unable to continue their Higher Education in Sri Lanka.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part single_feature_part_2">
+                            <span class="single_service_icon style_icon"><i class="ti-direction-alt"></i></span>
+                            <h4>Better Future</h4>
+                            <p>Giving you a purpose for a better future by guiding you with relevant course details.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><i class="ti-stats-up"></i></span>
+                            <h4>Job Oppurtunities</h4>
+                            <p>After completion of NVQ levels, we will help you to find the best job for you</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!-- upcoming_event part start-->
+
+    <!-- sri lankan map -->
+    <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Top 10 Western Province Job Vacancies</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+                <canvas id="pie-chart" width="800" height="450"></canvas>
+                <script>
+                new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Mechanical Engineering Technology", "Motor vehicle Mechanics and Repairs", "Welders and Flame Cutters", "Electrical Mechanics and Filters", "Electrical Engineering","Web & Multimedia Developers","Beauticians and related workers","Building Construction","Hotel Industry","Metal Finishing,Plating and coating"],
+      datasets: [{
+        label: "Vacancies",
+        backgroundColor: ["#he95cd", "#8e5ea2","#3cba9f","#e8c3b9","#a45850","#3e95cd","#acba9f","#c45850","#8e5ea2","#a8c3b9"],
+        data: [4270,2426,1448,1358,379,354,3890,4178,233,277]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        // text: 'Top 10 Western Province Job Vacancies'
+      }
+    }
+});
+                </script>
+            <div class="progress-table-wrap">
+                    <div class="progress-table">
+                        <!-- <div class="table-head">
+                            <div class="serial">#</div>
+                            <div class="country">Province</div>
+                            <div class="visit">No. of Job Vacancies</div>
+                            <div class="percentage">Percentages</div>
+                        </div> -->
+                        <div class="table-row mnkrow">
+                            <div class="serial">01</div>
+                            <div class="country" style="width: 60%;"> Mechanical Engineering Technologies</div>
+                            <div class="visit">4270</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">02</div>
+                            <div class="country" style="width: 60%;"> Motor vehicle Mechanics and Repairs</div>
+                            <div class="visit">2426</div>
+                           
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">03</div>
+                            <div class="country" style="width: 60%;"> Welders and Flame Cutters</div>
+                            <div class="visit">1448</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">04</div>
+                            <div class="country" style="width: 60%;"> Electrical Mechanics and Filters</div>
+                            <div class="visit">1358</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">05</div>
+                            <div class="country" style="width: 60%;"> Electrical Engineering</div>
+                            <div class="visit">379</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">06</div>
+                            <div class="country" style="width: 60%;"> Web & Multimedia Developers</div>
+                            <div class="visit">354</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">07</div>
+                            <div class="country" style="width: 60%;"> Beauticians and related workers</div>
+                            <div class="visit">3890</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">08</div>
+                            <div class="country" style="width: 60%;"> Building Construction</div>
+                            <div class="visit">4178</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                            <div class="serial">09</div>
+                            <div class="country" style="width: 60%;"> Hotel Industry</div>
+                            <div class="visit">233</div>
+                            
+                        </div>
+                        <div class="table-row mnkrow">
+                                <div class="serial">10</div>
+                                <div class="country" style="width: 60%;"> Metal Finishing,Plating and coating</div>
+                                <div class="visit">277</div>
+                                
+                            </div>
+                    </div>
+                </div>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 class="modal-title">Top 10 Southern Province Job Vacancies</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+                    <canvas id="pie-chart2" width="800" height="450"></canvas>
+                    <script>
+                    new Chart(document.getElementById("pie-chart2"), {
+        type: 'pie',
+        data: {
+          labels: ["Mechanical Engineering Technology", "Motor vehicle Mechanics and Repairs", "Welders and Flame Cutters", "Electrical Mechanics and Filters", "Electrical Engineering","Web & Multimedia Developers","Beauticians and related workers","Building Construction","Hotel Industry","Metal Finishing,Plating and coating"],
+          datasets: [{
+            label: "Vacancies",
+            backgroundColor: ["#he95cd", "#8e5ea2","#3cba9f","#e8c3b9","#a45850","#3e95cd","#acba9f","#c45850","#8e5ea2","#a8c3b9"],
+            data: [0,964,34,133,0,0,0,221,1012,17,0]
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            // text: 'Top 10 Western Province Job Vacancies'
+          }
+        }
+    });
+                    </script>
+                <div class="progress-table-wrap">
+                        <div class="progress-table">
+                            <!-- <div class="table-head">
+                                <div class="serial">#</div>
+                                <div class="country">Province</div>
+                                <div class="visit">No. of Job Vacancies</div>
+                                <div class="percentage">Percentages</div>
+                            </div> -->
+                            <div class="table-row mnkrow">
+                                
+                                <div class="serial">01</div>
+                                <div class="country" style="width: 60%;"> Mechanical Engineering Technologies</div>
+                                <div class="visit">0</div>
+                           
+                            </div>
+                            <div class="table-row mnkrow">
+                               
+                                <div class="serial">02</div>
+                                <div class="country" style="width: 60%;"> Motor vehicle Mechanics and Repairs</div>
+                                <div class="visit">964</div>
+                               
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">03</div>
+                                <div class="country" style="width: 60%;"> Welders and Flame Cutters</div>
+                                <div class="visit">34</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">04</div>
+                                <div class="country" style="width: 60%;"> Electrical Mechanics and Filters</div>
+                                <div class="visit">133</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">05</div>
+                                <div class="country" style="width: 60%;"> Electrical Engineering</div>
+                                <div class="visit">0</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">06</div>
+                                <div class="country" style="width: 60%;"> Web & Multimedia Developers</div>
+                                <div class="visit">0</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">07</div>
+                                <div class="country" style="width: 60%;"> Beauticians and related workers</div>
+                                <div class="visit">0</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">08</div>
+                                <div class="country" style="width: 60%;"> Building Construction</div>
+                                <div class="visit">221</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                <div class="serial">09</div>
+                                <div class="country" style="width: 60%;"> Hotel Industry</div>
+                                <div class="visit">1012</div>
+                                
+                            </div>
+                            <div class="table-row mnkrow">
+                                    <div class="serial">10</div>
+                                    <div class="country" style="width: 60%;"> Metal Finishing,Plating and coating</div>
+                                    <div class="visit">17</div>
+                                    
+                                </div>
+                        </div>
+                </div>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <section class="learning_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                            <div class="learning_member_text">
+                                    <h5>Find Jobs</h5>
+                                    <h2>Around
+                                        Sri Lanka</h2>
+
+                                    <!-- <h4><a href="#">Western Province - 25963</a></h5>
+                                    <h4><a href="#">Southern Province - 25963</a></h5>
+                                    <h5><a href="#">Eastern Province - 25963</a></h5>
+                                    <h5><a href="#">Uva Province - 25963</a></h5>
+                                    <h5><a href="#">Central Province - 25963</a></h5>
+                                    <h5><a href="#">Sabaragamu Province - 25963</a></h5>
+                                    <h5><a href="#">Nothern Province - 25963</a></h5>
+                                    <h5><a href="#">Western Province - 25963</a></h5>
+                                    <h5><a href="#">Western Province - 25963</a></h5> -->
+                                    <div class="section-top-border">
+                                           
+                                            <div class="progress-table-wrap">
+                                                <div class="progress-table">
+                                                    <div class="table-head">
+                                                        <div class="serial">#</div>
+                                                        <div class="country">Province</div>
+                                                        <div class="visit">No. of Job Vacancies</div>
+                                                        <div class="percentage">Percentages</div>
+                                                    </div>
+                                                    <div class="table-row mnkrow" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="serial">01</div>
+                                                        <div class="country" > Western Province</div>
+                                                        <div class="visit">350160</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 70%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow" data-toggle="modal" data-target="#myModal2">
+                                                        <div class="serial">02</div>
+                                                        <div class="country"> Southern Province</div>
+                                                        <div class="visit">26206</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 6%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">03</div>
+                                                        <div class="country"> Central Province</div>
+                                                        <div class="visit">25800</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 6%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">04</div>
+                                                        <div class="country"> Nothern Province</div>
+                                                        <div class="visit">9321</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 2%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">05</div>
+                                                        <div class="country"> Eastern Province</div>
+                                                        <div class="visit">2038</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 1%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">06</div>
+                                                        <div class="country"> North-Western Province</div>
+                                                        <div class="visit">27314</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 6%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">07</div>
+                                                        <div class="country"> North-Central Province</div>
+                                                        <div class="visit">16665</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 4%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">08</div>
+                                                        <div class="country"> Uva Province</div>
+                                                        <div class="visit">4785</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 2%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row mnkrow">
+                                                        <div class="serial">09</div>
+                                                        <div class="country"> Sabaragamuwa Province</div>
+                                                        <div class="visit">35013</div>
+                                                        <div class="percentage">
+                                                            <div class="progress">
+                                                                <div class="progress-bar color-3" role="progressbar" style="width: 10%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                    </div>
+                    <div class="col-md-4">
+                        <br><br><br><br><br><br><br>
+                            <img src="img/lanka.png" style="width:auto;height:500px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- learning part start-->
+    <section class="learning_part">
+        <div class="container">
+            <div class="row align-items-sm-center align-items-lg-stretch">
+                <div class="col-md-7 col-lg-7">
+                    <div class="learning_img">
+                        <img src="img/learning_img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="learning_member_text">
+                        <h5>About us</h5>
+                        <h2>Learn with Ease
+                            and Anytime</h2>
+                        <p>Our Goal is to increase the living strandards of Sri Lankan youth,
+                             and help everyone achieve a better future.
+                            Join us and find out how.</p>
+                        <ul>
+                            <li><span class="ti-user"></span>Tell us what you got.</li><br>
+                            <li><span class="ti-stats-up"></span>We will help you to level up.</li>
+                        </ul>
+                        <!-- <a href="#" class="btn_1">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learning part end-->
+
+    <!-- member_counter counter start -->
+    <section class="member_counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">102400</span>
+                        <h4>Job oppurtunities</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">9</span>
+                        <h4> Province</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">1020</span>
+                        <h4>Online Students</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">289</span>
+                        <h4>Trainig Centers</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- member_counter counter end -->
+
+    <!--::review_part start::-->
+    <section class="special_cource padding_top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section_tittle text-center">
+                        <p>popular courses</p>
+                        <h2>Special Courses</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                            <div class="single_special_cource">
+                                    <img src="img/special_cource_2.png" class="special_img" alt="">
+                                    <div class="special_cource_text">
+                                        <a href="course-details.html" class="btn_4">NVQ Level 7</a>
+                                        <h4>Rs.76000.00</h4>
+                                        <a href="course-details.html">
+                                            <h3>B.Tech in Food Process Technology </h3>
+                                        </a>
+                                        <ul class="unordered-list">
+                                                <li>Age not specify</li>
+                                                <li>English medium</li>
+                                                <li>Part time course</li>
+                                                <li>3 Years</li>
+                                                <li>Starting from March</li>
+                                        </ul>
+                                                <section>
+                                        <div class="author_info">
+                                            <div class="author_img">
+                                                <img src="img/author/univotec.png" alt="">
+                                                <div class="author_info_text">
+                                                    <p>Enroll at:</p>
+                                                    <h5><a href="#">UNIVOTEC-Rathmalana</a></h5>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                            <div class="author_rating" style="margin-left: 36%;margin-top: 1%;">
+                                                <div class="rating">
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                                </div>
+                                                <p>3.6 Ratings</p>
+                                        </div>
+                                    </section>
+                                    </div>
+            
+                                </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                        <div class="single_special_cource">
+                                <img src="img/special_cource_1.png" class="special_img" alt="">
+                                <div class="special_cource_text">
+                                    <a href="course-details.html" class="btn_4">NVQ Level 7</a>
+                                    <h4>Rs.76000.00</h4>
+                                    <a href="course-details.html">
+                                        <h3>B.Tech in Quantity surveying </h3>
+                                    </a>
+                                    <ul class="unordered-list">
+                                            <li>Age not specified</li>
+                                            <li>English medium</li>
+                                            <li>Part time course</li>
+                                            <li>3 Years</li>
+                                            <li>Starting from January</li>
+                                    </ul>
+                                            <section>
+                                    <div class="author_info">
+                                        <div class="author_img">
+                                            <img src="img/author/univotec.png" alt="">
+                                            <div class="author_info_text">
+                                                <p>Enroll at:</p>
+                                                <h5><a href="#">UNIVOTEC-Rathmalana</a></h5>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                        <div class="author_rating" style="margin-left: 36%;margin-top: 1%;">
+                                            <div class="rating">
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                            </div>
+                                            <p>3.6 Ratings</p>
+                                    </div>
+                                </section>
+                                </div>
+        
+                            </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                        <div class="single_special_cource">
+                                <img src="img/special_cource_3.png" class="special_img" alt="">
+                                <div class="special_cource_text">
+                                    <a href="course-details.html" class="btn_4">NVQ Level 4</a>
+                                    <h4>Free</h4>
+                                    <a href="course-details.html">
+                                        <h3>NC in Jewellery Design Manufacturing</h3>
+                                    </a>
+                                    <ul class="unordered-list">
+                                            <li>Age 17-29</li>
+                                            <li>English medium</li>
+                                            <li>Full time course</li>
+                                            <li>1 Year</li>
+                                            <li>Starting from January</li>
+                                    </ul>
+                                            <section>
+                                    <div class="author_info">
+                                        <div class="author_img">
+                                            <img src="img/author/tc.png" alt="">
+                                            <div class="author_info_text">
+                                                <p>Enroll at:</p>
+                                                <h5><a href="#">Sri Lanka college of Technology-Maradana</a></h5>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                        <div class="author_rating" style="margin-left: 36%;margin-top: 1%;">
+                                            <div class="rating">
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                            </div>
+                                            <p>3.6 Ratings</p>
+                                    </div>
+                                </section>
+                                </div>
+        
+                            </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                                <div class="single_special_cource">
+                                        <img src="img/special_cource_2.png" class="special_img" alt="">
+                                        <div class="special_cource_text">
+                                            <a href="course-details.html" class="btn_4">NVQ Level 4</a>
+                                            <h4>Rs.40000.00</h4>
+                                            <a href="course-details.html">
+                                                <h3>Photographer </h3>
+                                            </a>
+                                            <ul class="unordered-list">
+                                                    <li>Age 16-35</li>
+                                                    <li>Sinhala medium</li>
+                                                    <li>Part time course</li>
+                                                    <li>6 Months</li>
+                                                    <li>Starting from July</li>
+                                            </ul>
+                                                    <section>
+                                            <div class="author_info">
+                                                <div class="author_img">
+                                                    <img src="img/author/vtc.png" alt="">
+                                                    <div class="author_info_text">
+                                                        <p>Enroll at:</p>
+                                                        <h5><a href="#">Vocational training center - Rajagiriya</a></h5>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                                <div class="author_rating" style="margin-left: 36%;margin-top: 1%;">
+                                                    <div class="rating">
+                                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                                    </div>
+                                                    <p>3.6 Ratings</p>
+                                            </div>
+                                        </section>
+                                        </div>
+                
+                                    </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                            <div class="single_special_cource">
+                                    <img src="img/special_cource_1.png" class="special_img" alt="">
+                                    <div class="special_cource_text">
+                                        <a href="course-details.html" class="btn_4">NVQ Level 4</a>
+                                        <h4>Rs.7000.00</h4>
+                                        <a href="course-details.html">
+                                            <h3>Beautician and Relevant Areas </h3>
+                                        </a>
+                                        <ul class="unordered-list">
+                                                <li>Age 16-35</li>
+                                                <li>Sinhala medium</li>
+                                                <li>Full time course</li>
+                                                <li>3 Months</li>
+                                                <li>Starting from July</li>
+                                        </ul>
+                                                <section>
+                                        <div class="author_info">
+                                            <div class="author_img">
+                                                <img src="img/author/vtc.png" alt="">
+                                                <div class="author_info_text">
+                                                    <p>Enroll at:</p>
+                                                    <h5><a href="#">Vocational training center - Rajagiriya</a></h5>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                            <div class="author_rating" style="margin-left: 36%;margin-top: 1%;">
+                                                <div class="rating">
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                                </div>
+                                                <p>3.6 Ratings</p>
+                                        </div>
+                                    </section>
+                                    </div>
+            
+                                </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                            <div class="single_special_cource">
+                                    <img src="img/special_cource_3.png" class="special_img" alt="">
+                                    <div class="special_cource_text">
+                                        <a href="course-details.html" class="btn_4">NVQ Level 4</a>
+                                        <h4>Free</h4>
+                                        <a href="course-details.html">
+                                            <h3>NC in Engineering Draughtsmanship </h3>
+                                        </a>
+                                        <ul class="unordered-list">
+                                                <li>Age 17-29</li>
+                                                <li>Sinhala medium</li>
+                                                <li>Full time course</li>
+                                                <li>1 year</li>
+                                                <li>Starting from January</li>
+                                        </ul>
+                                                <section>
+                                        <div class="author_info">
+                                            <div class="author_img">
+                                                <img src="img/author/tc.png" alt="">
+                                                <div class="author_info_text">
+                                                    <p>Enroll at:</p>
+                                                    <h5><a href="#">Technical college - Homagama</a></h5>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                            <div class="author_rating" style="margin-left: 36%;margin-top: 1%;">
+                                                <div class="rating">
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
+                                                    <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                                </div>
+                                                <p>3.6 Ratings</p>
+                                        </div>
+                                    </section>
+                                    </div>
+            
+                                </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+
+    <!-- learning part start-->
+    <section class="advance_feature learning_part">
+        <div class="container">
+            <div class="row align-items-sm-center align-items-xl-stretch">
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_member_text">
+                        <h5>Advance feature</h5>
+                        <h2>Our Advance Educator
+                            Learning System</h2>
+                        <p>Learn anytime being anywhere using online modules and train your mind with our advanced 3D models. Enhance your educational experience while earning.</p>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-12 col-lg-6">
+                                <div class="learning_member_text_iner">
+                                    <span class="ti-pencil-alt"></span>
+                                    <h4>Learn Anywhere</h4>
+                                    <p>Online access to modules. Learn from anywhere anytime</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-12 col-lg-6">
+                                <div class="learning_member_text_iner">
+                                    <span class="ti-stamp"></span>
+                                    <h4>3D Simulations</h4>
+                                    <p>No more mising practicals. Simulate your practical using our provided 3D models.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="learning_img">
+                        <img src="img/advance_feature_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learning part end-->
+
+    <!-- ::review_part start::
+    <section class="testimonial_part">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section_tittle text-center">
+                        <p>tesimonials</p>
+                        <h2>Happy Students</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="textimonial_iner owl-carousel">
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_2.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_3.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+
+    <!--::blog_part start::
+    <section class="blog_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section_tittle text-center">
+                        <p>Our Blog</p>
+                        <h2>Students Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="img/blog/blog_1.png" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="#" class="btn_4">Design</a>
+                                <a href="blog.html">
+                                    <h5 class="card-title">Dry beginning sea over tree</h5>
+                                </a>
+                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                <ul>
+                                    <li> <span class="ti-comments"></span>2 Comments</li>
+                                    <li> <span class="ti-heart"></span>2k Like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="#" class="btn_4">Developing</a>
+                                <a href="blog.html">
+                                    <h5 class="card-title">All beginning air two likeness</h5>
+                                </a>
+                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                <ul>
+                                    <li> <span class="ti-comments"></span>2 Comments</li>
+                                    <li> <span class="ti-heart"></span>2k Like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="#" class="btn_4">Design</a>
+                                <a href="blog.html">
+                                    <h5 class="card-title">Form day seasons sea hand</h5>
+                                </a>
+                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                <ul>
+                                    <li> <span class="ti-comments"></span>2 Comments</li>
+                                    <li> <span class="ti-heart"></span>2k Like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--::blog_part end:: -->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget footer_1">
+                        <a href="index.html"> <img src="img/logo.png" alt=""> </a>
+                        <p>But when shot real her. Chamber her one visite removal six
+                            sending himself boys scot exquisite existend an </p>
+                        <p>But when shot real her hamber her </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Newsletter</h4>
+                        <p>Stay updated with our latest trends Seed heaven so said place winged over given forth fruit.
+                        </p>
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder='Enter email address'
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter email address'">
+                                    <div class="input-group-append">
+                                        <button class="btn btn_1" type="button"><i class="ti-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="social_icon">
+                            <a href="#"> <i class="ti-facebook"></i> </a>
+                            <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                            <a href="#"> <i class="ti-instagram"></i> </a>
+                            <a href="#"> <i class="ti-skype"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact us</h4>
+                        <div class="contact_info">
+                            <p><span> Address :</span> Hath of it fly signs bear be one blessed after </p>
+                            <p><span> Phone :</span> +2 36 265 (8060)</p>
+                            <p><span> Email : </span>info@colorlib.com </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</body>
+
+</html>
